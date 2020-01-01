@@ -19,3 +19,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days [Storing C:/Users/Amar/key.jks]
