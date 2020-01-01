@@ -34,15 +34,27 @@ class Home extends StatelessWidget {
           elevation: 0.0,
           actions: <Widget>[
             FlatButton.icon(
-              icon: Icon(Icons.person),
-              label: Text('logout'),
+              icon: Icon(
+                Icons.person,
+                color: Colors.white,
+              ),
+              label: Text(
+                'logout',
+                style: TextStyle(color: Colors.white),
+              ),
               onPressed: () async {
                 await _auth.signOut();
               },
             ),
             FlatButton.icon(
-              icon: Icon(Icons.settings),
-              label: Text('setting'),
+              icon: Icon(
+                Icons.add_circle_outline,
+                color: Colors.white,
+              ),
+              label: Text(
+                'add',
+                style: TextStyle(color: Colors.white),
+              ),
               onPressed: () {
                 _showSettingsPanel();
               },
